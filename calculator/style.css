@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', cursive;
+}
+
+body {
+    background-color: rgb(30,35,38);
+}
+
+.calculator {
+    position: relative;
+    user-select: none;
+    margin: 150px auto;
+    width: 350px;
+    background-color: rgb(30,35,38);
+    box-shadow: -15px 30px 50px 20px rgba(0, 0, 0, 0.83);
+}
+
+.display {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(320deg, rgba(30,35,38,1) 20%, rgba(57, 60, 60, 0.699) 90%);
+    box-shadow: inset 5px 5px 15px 0 rgba(141, 141, 141, 0.22),
+                inset -3px 0 15px 0 rgba(0, 0, 0, 0.487);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2C3134;
+}
+
+.btn {
+    position: relative;
+    box-sizing: border-box;
+    width: 24.56%;
+    height: 75px;
+    background-color: #1E2326;
+    margin-top: 1px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height:75px;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.line {
+    position: absolute;
+    top: 96%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    opacity: 0;
+    background-color: rgba(255, 0, 111, 0.871);
+    transition: .5s;
+}
+
+.btn:hover > .line {
+    width:100%;
+    opacity: 1;
+    transition: .5s;
+}
+
+.btn:hover {
+    /* background-color: #191c1d; */
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.535),
+                inset -1px -1px 3px 0 rgba(0, 0, 0, 0.344);
+    transition: .5s;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sim1 {
+    background-color: #191c1d;
+}
+
+.sim1:hover {
+    background-color: #1E2326;
+}
+
+.equal {
+    width: 74.8%;
+}
+
+.grad, .equal {
+    background: linear-gradient(90deg, rgba(30,35,38,1) 20%, rgba(255,0,111,0.36) 100%) !important;
+}
+
+.dark {
+    background: linear-gradient(90deg, #191c1d 20%, rgba(160, 1, 70, 0.466) 100%) !important;
+}
+
+.fstline {
+    background-color: rgba(160, 1, 70, 0.466);
+}
+
+.fstline:hover {
+    background-color: rgba(255, 0, 111, 0.309);
+}
+
+
+.equal:hover {
+    background-color: rgba(255, 0, 111, 0.199);
+}
+
+.sim:hover {
+    background-color: rgba(255, 0, 111, 0.55);
+}
+
+.num-area, .sim-area {
+    color: white;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.sim-area {
+    top: 25%;
+    font-size: 20px;
+    right: 15%;
+    color: rgba(255, 255, 255, 0.46);
+
+}
+
+.more > div {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 86px;
+}
